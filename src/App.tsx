@@ -25,7 +25,8 @@ function Component(props: any) {
       {props.work.link ? (
         <div>
           Link:{" "}
-          <a target="popup" href={props.work.link}>
+          <a 
+            className="linkProducts" target="popup" href={props.work.link}>
             {props.work.link}
           </a>
         </div>
@@ -241,7 +242,7 @@ function App() {
         <p>
           Powered by{" "}
           <a
-            color="#ffffff"
+            className="poweredByW3"
             rel="noopener noreferrer"
             href="https://www.w3schools.com/w3css/default.asp"
             target="popup"

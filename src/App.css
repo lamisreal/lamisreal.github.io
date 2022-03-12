@@ -1,8 +1,15 @@
-a {
+a.poweredByW3 {
     color: aliceblue;
+}
 
+a.linkProducts {
+    color: #090030;
 }
 
 a:hover {
     color: #090030;
+}
+
+a.linkProducts:hover {
+    color: #009688;
 }
