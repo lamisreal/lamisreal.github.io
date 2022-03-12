@@ -25,8 +25,7 @@ function Component(props: any) {
       {props.work.link ? (
         <div>
           Link:{" "}
-          <a 
-            className="linkProducts" target="popup" href={props.work.link}>
+          <a className="linkProducts" target="popup" href={props.work.link}>
             {props.work.link}
           </a>
         </div>
@@ -125,7 +124,7 @@ function App() {
     work: "WEB APP - SOFTWARE ENGINEERING",
     adress: "Binh Duong, Viet Nam",
     email: "lam.ct2910@gmail.com",
-    phone: "0379654050",
+    phone: "+84379654050",
   };
 
   const skills = [
@@ -166,11 +165,15 @@ function App() {
                 </p>
                 <p>
                   <i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal" />
-                  {user.email}
+                  <a className="linkUser" href={"mailto:" + user.email}>
+                    {user.email}
+                  </a>
                 </p>
                 <p>
                   <i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal" />
-                  {user.phone}
+                  <a className="linkUser" href={"tel:" + user.phone}>
+                    {user.phone}
+                  </a>
                 </p>
                 <hr />
                 <div className="w3-large">

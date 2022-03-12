@@ -6,10 +6,14 @@ a.linkProducts {
     color: #090030;
 }
 
-a:hover {
-    color: #090030;
-}
-
 a.linkProducts:hover {
     color: #009688;
+}
+
+a.linkUser {
+    color: #757575;
+}
+
+a:hover {
+    color: #090030;
 }
